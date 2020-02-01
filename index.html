@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Welcome to the LS Camp 2017</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./Escape_The_Room/css/ETR.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+	<style>@import url('https://fonts.googleapis.com/css?family=PT+Mono');</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="Warning">	
+</div>
+<!-- <div class="quit">
+	<div class="btn1" onclick="closeMe()">
+		<span>離開</span>
+		<div class="dot"></div>
+	</div>
+</div> -->
+<!-- Background -->
+	<div class="back-ground blurred"></div>
+	<div class="back-ground unblur"></div>
+<!-- Background -->
+
+<!-- Jumbo -->
+	<div class="jumbotron vertical-center">
+		<h1>2017 生科營</h1>
+		<div class="Badge">
+			<h4 class="Hint" id="Hint0"><a href="http://i.imgur.com/EDAQCfu.jpg" target="_blank">
+	<span class="char0">h</span>
+	<span class="char1">t</span>
+	<span class="char2">t</span>
+	<span class="char3">p</span>
+	<span class="char4">:</span>
+	<span class="char5">/</span>
+	<span class="char6">/</span>
+	<span class="char7">i</span>
+	<span class="char8">.</span>
+	<span class="char9">i</span>
+	<span class="char10">m</span>
+	<span class="char11">g</span>
+	<span class="char12">u</span>
+	<span class="char13">r</span>
+	<span class="char14">.</span>
+	<span class="char15">c</span>
+	<span class="char16">o</span>
+	<span class="char17">m</span>
+	<span class="char18">/</span>
+	<span class="char19">E</span>
+	<span class="char20">D</span>
+	<span class="char21">A</span>
+	<span class="char22">Q</span>
+	<span class="char23">C</span>
+	<span class="char24">f</span>
+	<span class="char25">u</span>
+	<span class="char26">.</span>
+	<span class="char27">j</span>
+	<span class="char28">p</span>
+	<span class="char29">g</span>
+	<span class="char30"> </span>
+	<span class="char31"> </span>
+	<span class="char32"> </span>
+</a></h4>
+<h4 class="Hint" id="Hint1"><a href="http://i.imgur.com/DAAl7TH.jpg" target="_blank">
+	<span class="char33">h</span>
+	<span class="char34">t</span>
+	<span class="char35">t</span>
+	<span class="char36">p</span>
+	<span class="char37">:</span>
+	<span class="char38">/</span>
+	<span class="char39">/</span>
+	<span class="char40">i</span>
+	<span class="char41">.</span>
+	<span class="char42">i</span>
+	<span class="char43">m</span>
+	<span class="char44">g</span>
+	<span class="char45">u</span>
+	<span class="char46">r</span>
+	<span class="char47">.</span>
+	<span class="char48">c</span>
+	<span class="char49">o</span>
+	<span class="char50">m</span>
+	<span class="char51">/</span>
+	<span class="char52">D</span>
+	<span class="char53">A</span>
+	<span class="char54">A</span>
+	<span class="char55">l</span>
+	<span class="char56">7</span>
+	<span class="char57">T</span>
+	<span class="char58">H</span>
+	<span class="char59">.</span>
+	<span class="char60">j</span>
+	<span class="char61">p</span>
+	<span class="char62">g</span>
+	<span class="char63"> </span>
+	<span class="char64"> </span>
+	<span class="char65"> </span>
+</a></h4>
+<h4 class="Hint" id="Hint2"><a href="https://goo.gl/3XqtKd" target="_blank">
+	<span class="char66">h</span>
+	<span class="char67">t</span>
+	<span class="char68">t</span>
+	<span class="char69">p</span>
+	<span class="char70">s</span>
+	<span class="char71">:</span>
+	<span class="char72">/</span>
+	<span class="char73">/</span>
+	<span class="char74">g</span>
+	<span class="char75">o</span>
+	<span class="char76">o</span>
+	<span class="char77">.</span>
+	<span class="char78">g</span>
+	<span class="char79">l</span>
+	<span class="char80">/</span>
+	<span class="char81">3</span>
+	<span class="char82">X</span>
+	<span class="char83">q</span>
+	<span class="char84">t</span>
+	<span class="char85">K</span>
+	<span class="char86">d</span>
+	<span class="char87"> </span>
+	<span class="char88"> </span>
+	<span class="char89"> </span>
+</a></h4>
+<h4 class="Hint" id="Hint3"><a href="https://goo.gl/xbE2mg" target="_blank">
+	<span class="char90">h</span>
+	<span class="char91">t</span>
+	<span class="char92">t</span>
+	<span class="char93">p</span>
+	<span class="char94">s</span>
+	<span class="char95">:</span>
+	<span class="char96">/</span>
+	<span class="char97">/</span>
+	<span class="char98">g</span>
+	<span class="char99">o</span>
+	<span class="char100">o</span>
+	<span class="char101">.</span>
+	<span class="char102">g</span>
+	<span class="char103">l</span>
+	<span class="char104">/</span>
+	<span class="char105">x</span>
+	<span class="char106">b</span>
+	<span class="char107">E</span>
+	<span class="char108">2</span>
+	<span class="char109">m</span>
+	<span class="char110">g</span>
+	<span class="char111"> </span>
+	<span class="char112"> </span>
+	<span class="char113"> </span>
+</a></h4>
+<h4 class="Hint" id="Hint4"><a href="https://goo.gl/Hra4Xg" target="_blank">
+	<span class="char114">h</span>
+	<span class="char115">t</span>
+	<span class="char116">t</span>
+	<span class="char117">p</span>
+	<span class="char118">s</span>
+	<span class="char119">:</span>
+	<span class="char120">/</span>
+	<span class="char121">/</span>
+	<span class="char122">g</span>
+	<span class="char123">o</span>
+	<span class="char124">o</span>
+	<span class="char125">.</span>
+	<span class="char126">g</span>
+	<span class="char127">l</span>
+	<span class="char128">/</span>
+	<span class="char129">H</span>
+	<span class="char130">r</span>
+	<span class="char131">a</span>
+	<span class="char132">4</span>
+	<span class="char133">X</span>
+	<span class="char134">g</span>
+	<span class="char135"> </span>
+	<span class="char136"> </span>
+	<span class="char137"> </span>
+</a></h4>
+
+		</div>
+	</div>
+<!-- Jumbo -->
+
+	<div class="paragraph container-fluid">
+		<h2>Escape The ROOM</h2>
+		<p>超好玩的密室逃脫在這裡～～～</p>
+
+<!-- Screen -->
+		<div class="row">
+			<div class="col-md-2"></div>
+			<div class="col-md-8 Screen">
+				<div class="list-container">
+					<div id="list"></div>
+				</div>
+				<div class="result-container">
+					<p id="result"></p>
+				</div>
+				<div class="score-container">
+					<p id="score"></p>
+				</div>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+<!-- Screen -->
+
+		<div class="row Input-Area">
+			<div class="col-md-2"></div>
+			<div class="col-md-8">
+				<span class="input input--kozakura">
+					<input class="input__field input__field--kozakura" type="text" id="exe_num" />
+					<label class="input__label input__label--kozakura" for="input-7">
+						<span class="input__label-content input__label-content--kozakura" data-content="題號" >題號</span>
+					</label>
+					<svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
+					</svg>
+				</span>
+
+				<span class="input input--kozakura">
+					<input class="input__field input__field--kozakura" type="text" id="ans" />
+					<label class="input__label input__label--kozakura" for="input-7">
+						<span class="input__label-content input__label-content--kozakura" data-content="答案">答案</span>
+					</label>
+					<svg class="graphic graphic--kozakura" width="300%" height="100%" viewBox="0 0 1200 60" preserveAspectRatio="none">
+						<path d="M1200,9c0,0-305.005,0-401.001,0C733,9,675.327,4.969,598,4.969C514.994,4.969,449.336,9,400.333,9C299.666,9,0,9,0,9v43c0,0,299.666,0,400.333,0c49.002,0,114.66,3.484,197.667,3.484c77.327,0,135-3.484,200.999-3.484C894.995,52,1200,52,1200,52V9z"/>
+					</svg>
+				</span>
+			</div>
+			<div class="col-md-2"></div>
+		</div>
+		<br>
+		<div class="row button">
+  			<div class="col-md-2"></div>
+  			<div class="col-md-3">
+  				<div class="btn1" id="send" onclick="send_ans()">
+					<span>提交答案</span>
+					<div class="dot"></div>
+				</div>
+  			</div>
+  			<div class="col-md-2">
+  				<div class="HINT" id="hint_btn" onclick="hint_or_exit()">
+					<span id="HINT">Hint</span>
+					<div class="dotH"></div>
+				</div>
+  			</div>
+  			<div class="col-md-3">
+  				<div class="btn1" id="list_btn" onclick="show_list()">
+					<span>計分板</span>
+					<div class="dot"></div>
+				</div>
+  			</div>
+  			<div class="col-md-2"></div>
+		</div>
+
+		<!-- <div class="container">	
+			<div class="btn1" id="send" onclick="send_ans()">
+				<span>SEND ANSWER</span>
+				<div class="dot"></div>
+			</div>
+			<br>
+			<div class="btn1" id="list_btn" onclick="show_list()">
+				<span>LIST</span>
+				<div class="dot"></div>
+			</div>
+		</div> -->
+		
+	</div>
+
+	<script type="text/javascript">
+		/*BLUR*/
+		var jumboHeight = $('.jumbotron').outerHeight();
+		function blur(){
+	    	var scrolled = $(window).scrollTop();
+	    	opacityVal = (scrolled / 500);
+	    	$('.blurred').css('opacity', opacityVal);
+	    	// $('.back-ground').css('height', (jumboHeight-scrolled) + 'px');
+		}
+
+		$(window).scroll(
+			function(e){
+	    		blur();
+			}
+		);
+		/*BLUR*/
+
+		/*INPUT*/
+		(function() {
+			// trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+			if (!String.prototype.trim) {
+				(function() {
+					// Make sure we trim BOM and NBSP
+					var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+					String.prototype.trim = function() {
+						return this.replace(rtrim, '');
+					};
+				})();
+			}
+
+			[].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+				// in case the input is already filled..
+				if( inputEl.value.trim() !== '' ) {
+					classie.add( inputEl.parentNode, 'input--filled' );
+				}
+
+				// events:
+				inputEl.addEventListener( 'focus', onInputFocus );
+				inputEl.addEventListener( 'blur', onInputBlur );
+			} );
+
+			function onInputFocus( ev ) {
+				classie.add( ev.target.parentNode, 'input--filled' );
+			}
+
+			function onInputBlur( ev ) {
+				if( ev.target.value.trim() === '' ) {
+					classie.remove( ev.target.parentNode, 'input--filled' );
+				}
+			}
+		})();
+		/*INPUT*/
+
+		/*
+		 * classie - class helper functions
+		 * from bonzo https://github.com/ded/bonzo
+		 */
+		( function( window ) {
+			'use strict';
+
+			function classReg( className ) {
+				return new RegExp("(^|\\s+)" + className + "(\\s+|$)");
+			}
+
+			var hasClass, addClass, removeClass;
+
+			if ( 'classList' in document.documentElement ) {
+				hasClass = function( elem, c ) {
+		    		return elem.classList.contains( c );
+		  		};
+		  		addClass = function( elem, c ) {
+		    		elem.classList.add( c );
+		  		};
+		  		removeClass = function( elem, c ) {
+		    		elem.classList.remove( c );
+		  		};
+			}
+			else {
+		  		hasClass = function( elem, c ) {
+		    		return classReg( c ).test( elem.className );
+		  		};
+		  		addClass = function( elem, c ) {
+		    		if ( !hasClass( elem, c ) ) {
+		      			elem.className = elem.className + ' ' + c;
+		    		}
+		  		};
+		  		removeClass = function( elem, c ) {
+		    		elem.className = elem.className.replace( classReg( c ), ' ' );
+		  		};
+			}
+
+			function toggleClass( elem, c ) {
+		  		var fn = hasClass( elem, c ) ? removeClass : addClass;
+		  		fn( elem, c );
+			}
+
+			var classie = {
+		  		// full names
+		  		hasClass: hasClass,
+		  		addClass: addClass,
+		  		removeClass: removeClass,
+		  		toggleClass: toggleClass,
+		  		// short names
+		  		has: hasClass,
+		  		add: addClass,
+		  		remove: removeClass,
+		  		toggle: toggleClass
+			};
+
+			// transport
+			if ( typeof define === 'function' && define.amd ) {
+		  		// AMD
+		  		define( classie );
+			}
+			else {
+		  		// browser global
+		  		window.classie = classie;
+			}
+		})( window );
+		/*
+		 * classie - class helper functions
+		 * from bonzo https://github.com/ded/bonzo
+		 */
+	</script>
+	<script type="text/javascript" charset="UTF-8" src="./Escape_The_Room/js/UserInterface.js"  ></script>
+</body>
+</html>
